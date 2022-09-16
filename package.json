@@ -4,7 +4,7 @@
     "serve": "spot docs api.ts",
     "validate": "spot validate api.ts",
     "generate": "spot generate --contract api.ts --language yaml --generator openapi3 --out ./build",
-    "build": "redoc-cli build ./build/api.yml --output ./build/index.html --title ARU Docs --cdn true",
+    "build": "redoc-cli build ./build/api.yml --output ./build/index.html --title 'ARU Docs' --cdn true",
     "docs": "npm run lint && npm run validate && npm run generate && npm run build"
   },
   "dependencies": {
